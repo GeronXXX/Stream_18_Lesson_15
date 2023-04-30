@@ -28,12 +28,16 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.12.3",
+            "com.codeborne:selenide:6.13.1",
             "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter:5.9.2",
             "org.slf4j:slf4j-simple:2.0.6",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 tasks.withType(Test) {
