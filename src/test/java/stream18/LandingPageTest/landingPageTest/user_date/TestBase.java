@@ -12,8 +12,8 @@ import stream18.LandingPageTest.helpers.Attach;
 import java.util.Map;
 
 public class TestBase {
-    @BeforeAll
-    static void beforeALL() {
+
+
         @BeforeAll
         static void beforeALL() {
             Configuration.baseUrl = System.getProperty("baseUrl", "https://www.1-ofd.ru/");
