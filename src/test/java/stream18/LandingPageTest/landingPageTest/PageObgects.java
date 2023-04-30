@@ -12,7 +12,8 @@ public class PageObgects {
     private final SelenideElement obgectTextLending = $x("//h1[@class='block-header__headline']" +
             "//span[@class='block-header__headline-text']");
     private final SelenideElement obgectSubNavbar = $x("//nav[@class='sub-navbar__menu']");
-    private final SelenideElement obgectSalesMonitoring = $x("//body/div[@id='analytics']/div[1]/div[1]/main[1]/div[2]/div[1]/ul[1]/li[1]");
+    private final SelenideElement obgectSalesMonitoring = $x("//body/div[@id='analytics']" +
+            "/div[1]/div[1]/main[1]/div[2]/div[1]/ul[1]/li[1]");
 //    private final SelenideElement obgectSalesMonitoring = $x("");
     private final SelenideElement obgectStellungnahmeName = $x("//input[@id='form-analytics-name']");
     private final SelenideElement obgectStellungnahmeEmail = $x("//input[@id='form-analytics-email']");

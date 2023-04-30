@@ -1,11 +1,12 @@
 package stream18.LandingPageTest.landingPageTest;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import stream18.LandingPageTest.landingPageTest.user_date.TestBase;
 
 import static stream18.LandingPageTest.landingPageTest.FakerTestDate.*;
-
+@Tag("1ofd_tests")
 public class LandingPageTest extends TestBase {
     PageObgects pageObgects = new PageObgects();
 
@@ -56,6 +57,5 @@ public class LandingPageTest extends TestBase {
                 .RegistrationButtonContinue()
                 .RegistrationFieldName()
                 .RegistrationTooltip("Обязательное поле!");
-
     }
 }
