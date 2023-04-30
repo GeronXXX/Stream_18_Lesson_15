@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class PageObgects {
     private final SelenideElement obgectTextLending = $x("//h1[@class='block-header__headline']" +
             "//span[@class='block-header__headline-text']");
-    private final SelenideElement obgectSubNavbar = $x("//nav[@class='sub-navbar__menu']");
+    private final SelenideElement obgectSubNavbar = $x("//header[@class='header']//li[2]");
     private final SelenideElement obgectSalesMonitoring = $x("//body/div[@id='analytics']" +
             "/div[1]/div[1]/main[1]/div[2]/div[1]/ul[1]/li[1]");
 //    private final SelenideElement obgectSalesMonitoring = $x("");
