@@ -5,7 +5,7 @@ Chat id: -1001985863663
 
 https://api.telegram.org/bot6128870637:AAG0VQOTCgmTTwjpKFf0cevjVteJC1MoET0/getUpdates
 
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001985863663", "text": "Hello quru", "disable_notification": true}' -k https://api.telegram.org/bot6128870637:AAG0VQOTCgmTTwjpKFf0cevjVteJC1MoET0/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001985863663", "text": "Hello", "disable_notification": true}' -k https://api.telegram.org/bot6128870637:AAG0VQOTCgmTTwjpKFf0cevjVteJC1MoET0/sendMessage
 curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001985863663", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot6128870637:AAG0VQOTCgmTTwjpKFf0cevjVteJC1MoET0/sendMessage
 
 
