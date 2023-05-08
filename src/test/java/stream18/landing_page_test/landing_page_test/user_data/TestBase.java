@@ -1,4 +1,4 @@
-package stream18.LandingPageTest.landingPageTest.user_date;
+package stream18.landing_page_test.landing_page_test.user_data;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import stream18.LandingPageTest.helpers.Attach;
+import stream18.landing_page_test.helpers.Attach;
 
 import java.util.Map;
 

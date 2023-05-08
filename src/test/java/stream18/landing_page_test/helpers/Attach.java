@@ -1,4 +1,4 @@
-package stream18.LandingPageTest.helpers;
+package stream18.landing_page_test.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
