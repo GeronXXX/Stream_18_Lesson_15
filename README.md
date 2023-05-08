@@ -23,7 +23,7 @@
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg"> 
 <img width="5%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
@@ -88,7 +88,8 @@ gradle clean ofd_tests_test
 <img title="Jira Task" src="images/screens/jiraTask.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
@@ -96,7 +97,7 @@ gradle clean ofd_tests_test
 <img width="70%" title="Telegram Notifications" src="images/screens/notificationExample.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+## <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
