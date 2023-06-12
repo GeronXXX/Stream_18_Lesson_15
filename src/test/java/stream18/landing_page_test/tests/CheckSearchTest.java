@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import stream18.landing_page_test.pages.ObjectCheckSearch;
 import stream18.landing_page_test.pages.PageHome;
 
-public class CheckSearchTest {
+public class CheckSearchTest extends TestBase {
     PageHome pageHome = new PageHome();
     ObjectCheckSearch objectCheckSearch = new ObjectCheckSearch();
     @Test
