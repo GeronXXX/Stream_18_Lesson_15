@@ -11,6 +11,7 @@ public class LandingPageTest extends TestBase {
     PageHome pageHome = new PageHome();
     PageAnalitika pageAnalitika = new PageAnalitika();
 
+
     @Tag("1ofd_tests")
     @Test
     @DisplayName("Проверка, что страница открылась")
