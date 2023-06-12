@@ -16,7 +16,6 @@ public class TestBase {
 
         @BeforeAll
         static void beforeALL() {
-//            Configuration.baseUrl = System.getProperty("baseUrl", "https://www.1-ofd.ru/");
             Configuration.remote = "https://user1:1234@" + System.getProperty("1ofd_tests", "selenoid.autotests.cloud/wd/hub");
             Configuration.browserSize = System.getProperty("browserSize");
             Configuration.browser = System.getProperty("browser", "chrome");
