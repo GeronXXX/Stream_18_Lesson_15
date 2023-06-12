@@ -22,21 +22,21 @@ public class PageHome {
 //            "//button[@class='button button--size_small button--font-size_none button--color_green button--icon_none" +
 //            " button--disabled_false button--position_auto button--ident_'][contains(text(),'Отправить заявку')]");
     private final SelenideElement objectFooterMenu = $x("//nav[@class='footer__nav']");
-    private final SelenideElement objectNumberFn = $x("//input[@id='numberFn']");
-    private final SelenideElement objectNumberFd = $x("//input[@id='numberFd']");
-    private final SelenideElement objectNumberFp = $x("//input[@id='fp']");
-    private final SelenideElement objectSearchForm = $x("//form[@name='searchForm']");
-    private final SelenideElement objectPageHeade = $x("//div[@class='page-header']//h2");
-    private final SelenideElement objectConsumerRowMenu = $x("//ul[@class='nav nav-pills" +
-            " nav-justified navsearch']");
-    private final SelenideElement objectFieldlinkCheck = $x("//input[@id='linkCheck']");
-    private final SelenideElement objectSearchByLinkForm = $x("//form[@name='searchByLinkForm']");
+//    private final SelenideElement objectNumberFn = $x("//input[@id='numberFn']");
+//    private final SelenideElement objectNumberFd = $x("//input[@id='numberFd']");
+//    private final SelenideElement objectNumberFp = $x("//input[@id='fp']");
+//    private final SelenideElement objectSearchForm = $x("//form[@name='searchForm']");
+//    private final SelenideElement objectPageHeade = $x("//div[@class='page-header']//h2");
+//    private final SelenideElement objectConsumerRowMenu = $x("//ul[@class='nav nav-pills" +
+//            " nav-justified navsearch']");
+//    private final SelenideElement objectFieldlinkCheck = $x("//input[@id='linkCheck']");
+//    private final SelenideElement objectSearchByLinkForm = $x("//form[@name='searchByLinkForm']");
     private final SelenideElement objecBlockEnter = $x("//a[contains(text(),'Зарегистрироваться')]");
-    private final SelenideElement objecRegistrationButtonContinue =
-            $x("//div[@class='btn-box']");
-    private final SelenideElement objecRegistrationFieldName =
-            $x("//app-taxpayer-input[@placeholder='ФИО']//div[@class='taxpayer-input__wrap']");
-    private final SelenideElement objecCdkOverlayContainer = $x("//div[@class='cdk-overlay-container']");
+//    private final SelenideElement objecRegistrationButtonContinue =
+//            $x("//div[@class='btn-box']");
+//    private final SelenideElement objecRegistrationFieldName =
+//            $x("//app-taxpayer-input[@placeholder='ФИО']//div[@class='taxpayer-input__wrap']");
+//    private final SelenideElement objecCdkOverlayContainer = $x("//div[@class='cdk-overlay-container']");
     private final SelenideElement objecButtonEntrance = $x("//div[@class='banner']//div[3]");
 
     @Step("Открытие странице")
@@ -94,80 +94,79 @@ public class PageHome {
         return this;
     }
 
-    @Step("Вставить номер ФН")
-    public PageHome numberFn(String value) {
-        objectNumberFn.setValue(value);
-        return this;
-    }
+//    @Step("Вставить номер ФН")
+//    public PageHome numberFn(String value) {
+//        objectNumberFn.setValue(value);
+//        return this;
+//    }
+//
+//    @Step("Вставить номер ФД")
+//    public PageHome numberFd(String value) {
+//        objectNumberFd.setValue(value);
+//        return this;
+//    }
+//
+//    @Step("Вставить номер ФПД")
+//    public PageHome numberFp(String value) {
+//        objectNumberFp.setValue(value);
+//        return this;
+//    }
+//
+//    @Step("Нажать кнопку найти")
+//    public PageHome searchFormButtonFind() {
+//        objectSearchForm.$(byText("Найти")).click();
+//        return this;
+//    }
+//
+//    @Step("Проверить текст 'Чек найден'")
+//    public PageHome textCheckFound(String value) {
+//        objectPageHeade.shouldHave(text(value));
+//        return this;
+//    }
+//
+//    @Step("Нажать на раздел меню 'Поиск по ссылке'")
+//    public PageHome consumerMenuButtonLinkSearch() {
+//        objectConsumerRowMenu.$(byText("Поиск по ссылке")).click();
+//        return this;
+//    }
+//
+//    @Step("Вставить ссылку")
+//    public PageHome fieldlinkCheck(String value) {
+//        objectFieldlinkCheck.setValue(value);
+//        return this;
+//    }
+//
+//    @Step("Нажать кнопку 'Найти'")
+//    public PageHome searchByLinkFormButtonFind() {
+//        objectSearchByLinkForm.$(byText("Найти")).click();
+//        return this;
+//    }
 
-    @Step("Вставить номер ФД")
-    public PageHome numberFd(String value) {
-        objectNumberFd.setValue(value);
-        return this;
-    }
-
-    @Step("Вставить номер ФПД")
-    public PageHome numberFp(String value) {
-        objectNumberFp.setValue(value);
-        return this;
-    }
-
-    @Step("Нажать кнопку найти")
-    public PageHome searchFormButtonFind() {
-        objectSearchForm.$(byText("Найти")).click();
-        return this;
-    }
-
-    @Step("Проверить текст 'Чек найден'")
-    public PageHome textCheckFound(String value) {
-        objectPageHeade.shouldHave(text(value));
-        return this;
-    }
-
-    @Step("Нажать на раздел меню 'Поиск по ссылке'")
-    public PageHome consumerMenuButtonLinkSearch() {
-        objectConsumerRowMenu.$(byText("Поиск по ссылке")).click();
-        return this;
-    }
-
-    @Step("Вставить ссылку")
-    public PageHome fieldlinkCheck(String value) {
-        objectFieldlinkCheck.setValue(value);
-        return this;
-    }
-
-    @Step("Нажать кнопку 'Найти'")
-    public PageHome searchByLinkFormButtonFind() {
-        objectSearchByLinkForm.$(byText("Найти")).click();
-        return this;
-    }
-
-    @Step("Нажать кнопку 'Найти'")
+    @Step("Нажать кнопку 'Регистрация'")
     public PageHome blockEnterButtonRegister() {
         objecButtonEntrance.shouldBe(visible, enabled).hover();
-        ;
         objecBlockEnter.shouldBe(enabled).hover();
         objecBlockEnter.shouldBe(visible, enabled).click();
         return this;
     }
 
-    @Step("Нажать кнопку 'Продолжить'")
-    public PageHome registrationButtonContinue() {
-        objecRegistrationButtonContinue.$(byText("Продолжить")).shouldBe(visible, enabled).hover();
-        objecRegistrationButtonContinue.$(byText("Продолжить")).shouldBe(visible, enabled).click();
-        return this;
-    }
-
-    @Step("Навести курсор на поле 'ФИО'")
-    public PageHome registrationFieldName() {
-        objecRegistrationFieldName.hover();
-        return this;
-    }
-
-    @Step("Проверка тултипа")
-    public PageHome registrationTooltip(String value) {
-        objecCdkOverlayContainer.shouldHave(text(value));
-        return this;
-    }
+//    @Step("Нажать кнопку 'Продолжить'")
+//    public PageHome registrationButtonContinue() {
+//        objecRegistrationButtonContinue.$(byText("Продолжить")).shouldBe(visible, enabled).hover();
+//        objecRegistrationButtonContinue.$(byText("Продолжить")).shouldBe(visible, enabled).click();
+//        return this;
+//    }
+//
+//    @Step("Навести курсор на поле 'ФИО'")
+//    public PageHome registrationFieldName() {
+//        objecRegistrationFieldName.hover();
+//        return this;
+//    }
+//
+//    @Step("Проверка тултипа")
+//    public PageHome registrationTooltip(String value) {
+//        objecCdkOverlayContainer.shouldHave(text(value));
+//        return this;
+//    }
 }
 
