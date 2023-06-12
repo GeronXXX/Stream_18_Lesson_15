@@ -1,4 +1,4 @@
-package stream18.landing_page_test.landing_page_test.user_data;
+package stream18.landing_page_test.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

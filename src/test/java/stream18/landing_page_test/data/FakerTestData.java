@@ -1,4 +1,4 @@
-package stream18.landing_page_test.landing_page_test;
+package stream18.landing_page_test.data;
 
 import com.github.javafaker.Faker;
 

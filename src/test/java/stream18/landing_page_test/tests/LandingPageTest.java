@@ -1,8 +1,9 @@
-package stream18.landing_page_test.landing_page_test;
+package stream18.landing_page_test.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import stream18.landing_page_test.landing_page_test.user_data.TestBase;
+import stream18.landing_page_test.data.FakerTestData;
+import stream18.landing_page_test.pages.PageObjects;
 
 public class LandingPageTest extends TestBase {
     PageObjects pageObjects = new PageObjects();

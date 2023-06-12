@@ -1,4 +1,4 @@
-package stream18.landing_page_test.landing_page_test;
+package stream18.landing_page_test.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
