@@ -54,3 +54,9 @@ tasks.withType(Test) {
 test {
     useJUnitPlatform()
 }
+
+task ofd_tests_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("1ofd_tests")
+    }
+}
