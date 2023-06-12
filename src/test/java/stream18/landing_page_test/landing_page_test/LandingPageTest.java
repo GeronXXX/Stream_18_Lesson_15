@@ -1,11 +1,9 @@
 package stream18.landing_page_test.landing_page_test;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import stream18.landing_page_test.landing_page_test.user_data.TestBase;
 
-@Tag("1ofd_tests")
 public class LandingPageTest extends TestBase {
     PageObjects pageObjects = new PageObjects();
 
