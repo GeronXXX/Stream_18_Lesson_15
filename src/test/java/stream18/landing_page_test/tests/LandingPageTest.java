@@ -1,7 +1,6 @@
 package stream18.landing_page_test.tests;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import stream18.landing_page_test.data.FakerTestData;
 import stream18.landing_page_test.pages.PageAnalitika;
@@ -12,14 +11,12 @@ public class LandingPageTest extends TestBase {
     PageAnalitika pageAnalitika = new PageAnalitika();
 
 
-    @Tag("1ofd_tests")
     @Test
     @DisplayName("Проверка, что страница открылась")
     void openPageTest() {
         pageHome.openPage()
                 .textLending("Первый ОФД – первый ", "оператор фискальных данных");
     }
-
     @Test
     @DisplayName("Проверка, что кнопка не задизайблена 'Отправить заявку'")
     void analyticsMenuTest() {
@@ -54,7 +51,6 @@ public class LandingPageTest extends TestBase {
                 .searchByLinkFormButtonFind()
                 .textCheckFound("Чек найден");
     }
-
     @Test
     @DisplayName("Проверка тултипа на странице регистрации")
     void registrationTooltipTest() {
