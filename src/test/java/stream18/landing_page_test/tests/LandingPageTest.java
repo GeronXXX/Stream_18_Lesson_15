@@ -2,7 +2,6 @@ package stream18.landing_page_test.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import stream18.landing_page_test.data.FakerTestData;
 import stream18.landing_page_test.pages.PageObjects;
 
 public class LandingPageTest extends TestBase {
@@ -17,13 +16,13 @@ public class LandingPageTest extends TestBase {
 
     @Test
     @DisplayName("Проверка, что кнопка не задизайблена 'Отправить заявку'")
-    void analyticsMenuTest() {
+    void analyticsMenuTest(String firstName, String email, String phoneNumber) {
         pageObjects.openPage()
                 .menuAnalytics()
                 .salesMonitoringButton()
-                .setStellungnahmeName(FakerTestData.firstName)
-                .setStellungnahmeEmail(FakerTestData.email)
-                .setStellungnahmePhone(FakerTestData.phoneNumber)
+                .setStellungnahmeName(firstName)
+                .setStellungnahmeEmail(email)
+                .setStellungnahmePhone(phoneNumber)
                 .verificationlungnahmeButtonNotDisabled();
     }
     @Test
